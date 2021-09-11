@@ -1,0 +1,3 @@
+rootProject.name = "StorageToolbox"
+include ':app'
+include ':StorageToolboxAndroidLib'
