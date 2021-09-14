@@ -54,7 +54,7 @@ val downmostRootPath: String? = try {
 // this will most likely return "storage"
 
 // now the coolest part
-// you will need to have read_external_storage permission for this
+// you will need to have read_external_storage permission for this on api < 30
 // or manage_external_storage on api >= 30
 // you can automatically detect SD cards' paths
 // even if there are multiple SD cards' in the device
@@ -63,7 +63,7 @@ val downmostRootPath: String? = try {
 val sdCardPaths: MutableList<String>? = try {
 	StorageToolbox.getExternalDirPaths(context)
 } catch(e: Exception) { null }
-// this will most likely return mutable list containing ["storage/F62G3J/"]
+// this will most likely return a mutable list containing ["storage/F62G3J/"]
 
 // another utility
 // get the path of your file where internal or external (SD card) part is replaced by more user-friendly markers
