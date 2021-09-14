@@ -1,7 +1,7 @@
 
 # StorageToolbox
 
-Android utility library for device storage related operations. It can safely provide you internal root path and automatically detect external SD cards' path, etc.
+Android utility library for device storage related operations. It can safely provide you internal root path and automatically detect external SD cards' paths, etc.
   
 ## Include in your project  
 **Gradle dependency**  
